@@ -1,0 +1,29 @@
+.heading {
+  text-align: center;
+}
+.main {
+  display: flex;
+  align-items: center;
+  margin-left: 45%;
+}
+
+.button {
+  font-size: large;
+  background-color: blue;
+  margin: 6px;
+}
+.span-button {
+}
+.span-language {
+  padding: 10px;
+  padding-right: 50px;
+}
+.span-count {
+  padding: 10px;
+}
+.span-button,
+.span-language,
+.span-count {
+  border: 1px solid black;
+  margin: 1px;
+}

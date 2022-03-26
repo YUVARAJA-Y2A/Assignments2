@@ -1,0 +1,107 @@
+.main {
+  border: 5px black solid;
+  margin: auto;
+  width: 450px;
+  padding: 10px;
+  background-color: black;
+  border-radius: 8px;
+  height: 500px;
+}
+.main h1 {
+  color: white;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+.row-1 {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 20px;
+}
+.row-1 input {
+  padding: 5px;
+  background-image: linear-gradient(
+    to bottom right,
+    rgb(225, 246, 234),
+    rgb(156, 170, 138)
+  );
+  border-radius: 10px;
+}
+.row-2 {
+  margin-right: 9%;
+  width: 89px !important;
+  padding: 20px;
+}
+.row-2 input {
+  margin-left: 12%;
+  width: 375px !important;
+  padding: 5px;
+  border-radius: 10px;
+  background-image: linear-gradient(
+    to bottom right,
+    rgb(225, 246, 234),
+    rgb(156, 170, 138)
+  );
+}
+.row-3 {
+  margin-right: 9%;
+  width: 89px !important;
+  padding: 20px;
+}
+.row-3 input {
+  margin-left: 12%;
+  width: 375px !important;
+  padding: 5px;
+  border-radius: 10px;
+  background-image: linear-gradient(
+    to bottom right,
+    rgb(225, 246, 234),
+    rgb(156, 170, 138)
+  );
+  box-shadow: 1px 1px, 0 0 200px 40px #fff;
+}
+.row-4 {
+  margin-right: 9%;
+  width: 89px !important;
+  padding: 20px;
+}
+.row-4 input {
+  margin-left: 12%;
+  width: 375px !important;
+  padding: 5px;
+  border-radius: 10px;
+  background-image: linear-gradient(
+    to bottom right,
+    rgb(225, 246, 234),
+    rgb(156, 170, 138)
+  );
+}
+.row-5 {
+  margin-right: 9%;
+  width: 89px !important;
+  padding: 20px;
+}
+.row-5 input {
+  margin-left: 12%;
+  width: 375px !important;
+  padding: 5px;
+  border-radius: 10px;
+  background-image: linear-gradient(
+    to bottom right,
+    rgb(225, 246, 234),
+    rgb(156, 170, 138)
+  );
+}
+.create-account-button {
+  margin-left: 63%;
+  width: 3000px !important;
+  padding: 20px;
+}
+.create-account {
+  padding: 10px;
+  background-image: linear-gradient(
+    to bottom right,
+    rgba(102, 199, 73, 0.904),
+    rgb(152, 238, 39)
+  );
+  border-radius: 50px;
+}

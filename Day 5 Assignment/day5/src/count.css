@@ -1,0 +1,48 @@
+.increament-button {
+  color: rgb(0, 0, 0);
+  font-size: 16px;
+  margin-right: 2%;
+  line-height: 20px;
+  padding: 5px;
+  border-radius: 5px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-style: normal;
+  text-transform: none;
+  background-image: linear-gradient(
+    to right,
+    rgb(128, 113, 113) 0%,
+    rgb(184, 171, 171) 50%,
+    rgb(73, 69, 69) 100%
+  );
+  box-shadow: rgb(0, 0, 0) 5px 5px 20px 5px;
+  border: 2px solid rgb(0, 0, 0);
+  display: inline-block;
+}
+
+.increament-button:active {
+  background: #144e75;
+}
+
+.decreament-button {
+  color: rgb(5, 1, 1);
+  font-size: 16px;
+  line-height: 20px;
+  padding: 5px;
+  border-radius: 5px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-style: normal;
+  text-transform: none;
+  background-image: linear-gradient(
+    to right,
+    rgb(128, 113, 113) 0%,
+    rgb(184, 171, 171) 50%,
+    rgb(73, 69, 69) 100%
+  );
+  box-shadow: rgb(0, 0, 0) 5px 5px 20px 5px;
+  border: 2px solid rgb(0, 0, 0);
+  display: inline-block;
+}
+
+.decreament-button:active {
+  background: #e90707;
+}
