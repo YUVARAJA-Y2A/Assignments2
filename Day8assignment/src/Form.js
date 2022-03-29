@@ -10,7 +10,6 @@ class Form extends Component {
     password: "",
     confirmpassword: "",
     submit: false,
-    checked: false,
     agreed: false,
     warning: "",
   };

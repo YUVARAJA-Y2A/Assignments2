@@ -11,7 +11,7 @@ class App extends Component {
     password: "",
     confirmpassword: "",
     submit: false,
-    checked: false,
+
     agreed: false,
     warning: "",
   };
