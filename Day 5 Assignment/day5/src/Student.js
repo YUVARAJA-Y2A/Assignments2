@@ -1,20 +1,17 @@
-import React, { Component } from "react";
+import { useState } from "react";
 import "./student.css";
 
-class Student extends Component {
-  state = {
-    name: "Pranav",
-    age: 22,
-  };
-  render() {
-    return (
-      <div>
-        <p>
-          My name is <span class="student-name">{this.state.name}</span> and my
-          age is <span class="student-age">{this.state.age}</span>
-        </p>
-      </div>
-    );
-  }
+function Student() {
+  const [name] = useState("Pranav");
+  const [age] = useState(22);
+
+  return (
+    <div>
+      <p>
+        My name is <span class="student-name">{name}</span> and my age is{" "}
+        <span class="student-age">{age}</span>
+      </p>
+    </div>
+  );
 }
 export default Student;

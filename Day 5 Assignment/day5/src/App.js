@@ -1,14 +1,15 @@
-import { Component } from "react";
+import React from "react";
 import Count from "./Count";
-
-class App extends Component {
-  render() {
-    return (
-      <div>
-        <Count />
-      </div>
-    );
-  }
+import Student from "./Student";
+import Print from "./Print";
+function App() {
+  return (
+    <div>
+      <Count />
+      <Student />
+      <Print />
+    </div>
+  );
 }
 
 export default App;

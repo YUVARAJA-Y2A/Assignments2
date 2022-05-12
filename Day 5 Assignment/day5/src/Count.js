@@ -1,33 +1,26 @@
-import { Component } from "react";
 import "./count.css";
-import Student from "./Student";
-import Print from "./Print";
+import { useState } from "react";
 
-class Count extends Component {
-  state = {
-    count: 0,
+function Count() {
+  const [count, setCount] = useState(0);
+
+  const increamentButton = () => {
+    setCount(count + 1);
   };
-  increamentButton = () => {
-    this.setState({ count: this.state.count + 1 });
-  };
-  decreamentButton = () => {
-    this.setState({ count: this.state.count - 1 });
+  const decreamentButton = () => {
+    setCount(count - 1);
   };
 
-  render() {
-    return (
-      <div>
-        <Student />
-        <Print />
-        <h2>count : {this.state.count}</h2>
-        <button className="increament-button" onClick={this.increamentButton}>
-          Increament
-        </button>
-        <button className="decreament-button" onClick={this.decreamentButton}>
-          Decreament
-        </button>
-      </div>
-    );
-  }
+  return (
+    <div>
+      <h2>count : {count}</h2>
+      <button className="increament-button" onClick={increamentButton}>
+        Increament
+      </button>
+      <button className="decreament-button" onClick={decreamentButton}>
+        Decreament
+      </button>
+    </div>
+  );
 }
 export default Count;

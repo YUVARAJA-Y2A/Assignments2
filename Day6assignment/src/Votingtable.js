@@ -1,25 +1,23 @@
-import { Component } from "react";
+import { useState } from "react";
 import "./votingtable.css";
 
-class Votingtable extends Component {
-  state = {
-    count: 0,
+function Votingtable(props) {
+  const [count, setCount] = useState(0);
+
+  const increamentButton = () => {
+    setCount(count + 1);
   };
-  increamentButton = () => {
-    this.setState({ count: this.state.count + 1 });
-  };
-  render() {
-    return (
-      <div class="main">
-        <span class="span-language">{this.props.language}</span>
-        <span class="span-count">{this.state.count}</span>
-        <span class="span-button">
-          <button class="button" onClick={this.increamentButton}>
-            Vote
-          </button>
-        </span>
-      </div>
-    );
-  }
+
+  return (
+    <div class="main">
+      <span class="span-language">{props.language}</span>
+      <span class="span-count">{count}</span>
+      <span class="span-button">
+        <button class="button" onClick={increamentButton}>
+          Vote
+        </button>
+      </span>
+    </div>
+  );
 }
 export default Votingtable;

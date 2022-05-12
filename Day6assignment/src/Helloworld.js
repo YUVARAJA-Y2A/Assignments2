@@ -1,26 +1,27 @@
-import React, { Component } from "react";
+import { useState } from "react";
 
-class Helloworld extends Component {
-  state = {
-    titlename: "",
-  };
-  changeName = () => {
-    if (this.state.titlename === "Vanakkam") {
-      this.setState({ titlename: "Hello Ulagamae" });
+
+function Helloworld () {
+ const[titlename,setTitlename]=useState("")
+    
+  
+ const changeName = () => {
+    if (titlename === "Vanakkam") {
+      setTitlename( "Hello Ulagamae" );
     } else {
-      this.setState({ titlename: "Vanakkam" });
+      setTitlename( "Vanakkam" );
     }
   };
-  render() {
+
     return (
       <div>
         <br />
         <label>Just Click Me : </label>
-        <button onClick={this.changeName}>Change</button>
-        <h2>{this.state.titlename}</h2>
+        <button onClick={changeName}>Change</button>
+        <h2>{titlename}</h2>
       </div>
     );
-  }
+  
 }
 
 export default Helloworld;
